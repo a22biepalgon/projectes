@@ -2,11 +2,13 @@
   "name": "electronVuetify",
   "version": "0.0.0",
   "private": true,
+  "main": "main.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint . --fix --ignore-path .gitignore"
+    "lint": "eslint . --fix --ignore-path .gitignore",
+    "start":"electron ."
   },
   "dependencies": {
     "@mdi/font": "7.0.96",
