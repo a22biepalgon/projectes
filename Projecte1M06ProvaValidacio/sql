@@ -1,0 +1,16 @@
+CREATE TABLE AUTOR(
+	codigo INTEGER PRIMARY KEY,
+    nombre VARCHAR(30)
+    );
+    
+CREATE TABLE LIBRO(
+    codigo INTEGER PRIMARY KEY,
+    titulo VARCHAR(30),
+    isbn INTEGER,
+    editorial VARCHAR(30),
+    codigoAutor INTEGER,
+    FOREIGN KEY (codigoAutor) REFERENCES AUTOR(codigo)
+    );
+
+    INSERT INTO AUTOR VALUES(
+	1, "Biel Palomar")
