@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Projecte2bo</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="menu">Configuració Usuari</string>
+    <string name="hello_first_fragment">Benvingut Usuari</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="gorrabraves_order_message">Has seleccionat la gorra dels Braves</string>
+    <string name="gorrabills_order_message">Has seleccionat la gorra dels Bills</string>
+    <string name="gorraheat_order_message">Has seleccionat la gorra dels Heat</string>
+    <string name="title_activity_plantilla_dades">PlantillaDades</string>
+
+</resources>
