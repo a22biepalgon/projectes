@@ -34,6 +34,7 @@ app.use(cors({
 
 
 
+//SESSION
 app.use(session({
   secret: 'my-secret',  // a secret string used to sign the session ID cookie
   resave: false,  // don't save session if unmodified
