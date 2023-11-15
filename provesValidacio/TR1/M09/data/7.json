@@ -1,0 +1,82 @@
+{
+    "data": [
+        {
+            "task": "Design",
+            "user": "Alice",
+            "time_spent": 10,
+            "hour_of_day": 9
+        },
+        {
+            "task": "Coding",
+            "user": "Bob",
+            "time_spent": 15,
+            "hour_of_day": 14
+        },
+        {
+            "task": "Testing",
+            "user": "Charlie",
+            "time_spent": 12,
+            "hour_of_day": 11
+        },
+        {
+            "task": "Documentation",
+            "user": "Alice",
+            "time_spent": 8,
+            "hour_of_day": 10
+        },
+        {
+            "task": "Bug Fixes",
+            "user": "Bob",
+            "time_spent": 13,
+            "hour_of_day": 15
+        },
+        {
+            "task": "Meetings",
+            "user": "Charlie",
+            "time_spent": 6,
+            "hour_of_day": 13
+        },
+        {
+            "task": "Design",
+            "user": "Alice",
+            "time_spent": 11,
+            "hour_of_day": 11
+        },
+        {
+            "task": "Coding",
+            "user": "Bob",
+            "time_spent": 14,
+            "hour_of_day": 12
+        },
+        {
+            "task": "Testing",
+            "user": "Charlie",
+            "time_spent": 10,
+            "hour_of_day": 10
+        },
+        {
+            "task": "Bug Fixes",
+            "user": "Alice",
+            "time_spent": 10,
+            "hour_of_day": 16
+        },
+        {
+            "task": "Documentation",
+            "user": "Bob",
+            "time_spent": 7,
+            "hour_of_day": 9
+        },
+        {
+            "task": "Meetings",
+            "user": "Charlie",
+            "time_spent": 5,
+            "hour_of_day": 14
+        },
+        {
+            "task": "Coding",
+            "user": "Alice",
+            "time_spent": 12,
+            "hour_of_day": 15
+        }
+    ]
+}
