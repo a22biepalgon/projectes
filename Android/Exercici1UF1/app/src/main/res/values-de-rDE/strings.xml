@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UF1 Übung 1</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Zeichenketten für Fragmente zur Navigation -->
+    <string name="first_fragment_label">Erstes Fragment</string>
+    <string name="second_fragment_label">Zweites Fragment</string>
+    <string name="next">Weiter</string>
+    <string name="previous">Zurück</string>
+    <string name="menu">Benutzereinstellungen</string>
+    <string name="hello_first_fragment">Willkommen Benutzer</string>
+    <string name="hello_second_fragment">Hallo zweites Fragment. Arg: %1$s</string>
+    <string name="gorrabraves_order_message">Du hast die Mütze der Braves ausgewählt</string>
+    <string name="gorrabills_order_message">Du hast die Mütze der Bills ausgewählt</string>
+    <string name="gorraheat_order_message">Du hast die Mütze der Heat ausgewählt</string>
+    <string name="title_activity_plantilla_dades">Benutzerdaten</string>
+    <string name="userLogin">Benutzer</string>
+    <string name="passwordLogin">Passwort</string>
+    <string name="buttonLogin">Sitzung starten</string>
+    <string name="user_data_name">Name</string>
+    <string name="user_data_title">BENUTZERDATEN</string>
+    <string name="user_data_last_name">Nachname</string>
+    <string name="user_data_studies">Studien</string>
+    <string name="user_data_dni">Personalausweis</string>
+    <string name="user_data_postal_code">Postleitzahl</string>
+    <string name="user_data_genre">Geschlecht</string>
+    <string name="user_data_select_date">Datum auswählen</string>
+    <string name="user_data_date">Datum</string>
+    <string name="user_data_address">Adresse</string>
+    <string name="product_braves_desc">Mütze New Era Atlanta Braves Rustic Fall Low Profile 59FIFTY Ajustiert Braun Mannschaftslogo vorne MLB-Logo hinten Strukturierte Krone (fest) Passform nach Größe Gebogener Schirm New Era-Logo seitlich links Bestickt 100% Polyester</string>
+    <string name="product_bills_desc">Mütze New Era Buffalo Bills NFL Salute To Service 59FIFTY Ajustiert Beige Mannschaftslogo mit digitalem Camouflage-Infill vorne Umgekehrte US-Flagge mit digitalem Camouflage auf der rechten Seite NFL Salute To Service-Logo hinten Strukturierte Krone (fest) Passform nach Größe</string>
+    <string name="product_heat_desc">Mütze New Era Miami Heat Neon Pack 59FIFTY Ajustiert Blau Mannschaftslogo vorne NBA-Logo hinten Strukturierte Krone (fest) Passform nach Größe Flacher Schirm New Era-Logo seitlich links Bestickt 100% Polyester</string>
+</resources>

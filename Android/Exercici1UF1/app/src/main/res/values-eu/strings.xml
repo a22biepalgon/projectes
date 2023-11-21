@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UF1 Ariketa 1</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Fragmentuak nabigazioarako erabiliko diren karaktere-kateak -->
+    <string name="first_fragment_label">Lehenengo Fragmentua</string>
+    <string name="second_fragment_label">Bigarren Fragmentua</string>
+    <string name="next">Hurrengoa</string>
+    <string name="previous">Atzera</string>
+    <string name="menu">Erabiltzailearen Ezarpenak</string>
+    <string name="hello_first_fragment">Ongi etorri Erabiltzaile</string>
+    <string name="hello_second_fragment">Kaixo bigarren fragmentua. Arg: %1$s</string>
+    <string name="gorrabraves_order_message">Bravesen kapela hautatu duzu</string>
+    <string name="gorrabills_order_message">Billsen kapela hautatu duzu</string>
+    <string name="gorraheat_order_message">Heaten kapela hautatu duzu</string>
+    <string name="title_activity_plantilla_dades">Erabiltzailearen Datuak</string>
+    <string name="userLogin">Erabiltzailea</string>
+    <string name="passwordLogin">Pasahitza</string>
+    <string name="buttonLogin">Sitzung starten</string>
+    <string name="user_data_name">Izena</string>
+    <string name="user_data_title">ERABILTZAILE DATUAK</string>
+    <string name="user_data_last_name">Abizena</string>
+    <string name="user_data_studies">Ikasketak</string>
+    <string name="user_data_dni">DNI</string>
+    <string name="user_data_postal_code">Posta-kodea</string>
+    <string name="user_data_genre">Generoa</string>
+    <string name="user_data_select_date">Data hautatu</string>
+    <string name="user_data_date">Data</string>
+    <string name="user_data_address">Helbidea</string>
+    <string name="product_braves_desc">New Era Atlanta Braves Rustic Fall Low Profile 59FIFTY Ajustatua Marroia Taldearen logoa aurrealdean MLB-ren logoa atzealdean Korona egituratua (gogorra) Tamaina bakoitzeko Ajustea Aldaera leuna New Era-ren logoa ezkerrera aldean Bordatua 100% poliester</string>
+    <string name="product_bills_desc">New Era Buffalo Bills NFL Salute To Service 59FIFTY Ajustatua Beige Taldearen logoa infill digitalekin aurrealdean Estatubatuen bandera alderantziz digitalarekin eskuineko alboko NFL Salute To Service-aren logoa atzealdean Korona egituratua (gogorra) Tamaina bakoitzeko Ajustea</string>
+    <string name="product_heat_desc">New Era Miami Heat Neon Pack 59FIFTY Ajustatua Urdina Taldearen logoa aurrealdean NBA-ren logoa atzealdean Korona egituratua (gogorra) Tamaina bakoitzeko Ajustea Laua aldeera New Era-ren logoa ezkerrera aldean Bordatua 100% poliester</string>
+
+</resources>

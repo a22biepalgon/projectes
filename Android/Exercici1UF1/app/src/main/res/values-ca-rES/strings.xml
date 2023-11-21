@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">UF1 Exercici1</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Primer Fragment</string>
+    <string name="second_fragment_label">Segon Fragment</string>
+    <string name="next">Següent</string>
+    <string name="previous">Tornar</string>
+    <string name="menu">Configuració Usuari</string>
+    <string name="hello_first_fragment">Benvingut Usuari</string>
+    <string name="hello_second_fragment">Hola segon fragment. Arg: %1$s</string>
+    <string name="gorrabraves_order_message">Has seleccionat la gorra dels Braves</string>
+    <string name="gorrabills_order_message">Has seleccionat la gorra dels Bills</string>
+    <string name="gorraheat_order_message">Has seleccionat la gorra dels Heat</string>
+    <string name="title_activity_plantilla_dades">Dades d\'usuari</string>
+    <string name="userLogin">Usuari</string>
+    <string name="passwordLogin">Contrasenya</string>
+    <string name="buttonLogin">Inciar Sessió</string>
+    <string name="user_data_name">Nom</string>
+    <string name="user_data_title">DADES D\'USUARI</string>
+    <string name="user_data_last_name">Cognom</string>
+    <string name="user_data_studies">Estudis</string>
+    <string name="user_data_dni">DNI</string>
+    <string name="user_data_postal_code">Codi Postal</string>
+    <string name="user_data_genre">Gènere</string>
+    <string name="user_data_select_date">Seleccionar Data</string>
+    <string name="user_data_date">Data</string>
+    <string name="user_data_address">Direcció</string>
+    <string name="product_braves_desc">Gorra New Era Atlanta Braves Rustic Fall Low Profile 59FIFTY Fitted Marró Logotip de l\'equip a la part frontal Logotip de la MLB a la part posterior Corona estructurada (rígida) Ajust ajustat (per talles) Visera corbada Logotip New Era brodat a la part lateral esquerra 100% polièster</string>
+    <string name="product_bills_desc">Gorra New Era Buffalo Bills NFL Salute To Service 59FIFTY Ajustada Beix Logotip de l\'equip amb infill camuflatge digital a la part frontal Bandera dels EUA invertida amb camuflatge digital al lateral dret Logotip NFL Salute To Service a la part posterior Corona estructurada (rígida) Ajust ajustat (per talles)</string>
+    <string name="product_heat_desc">Gorra New Era Miami Heat Neon Pack 59FIFTY Ajustada Blava Logotip de l\'equip a la part frontal Logotip de la NBA brodat a la part posterior Corona estructurada (rígida) Disseny ajustat (per talles) Visera plana Logotip New Era brodat al lateral esquerre 100% polièster</string>
+
+</resources>
