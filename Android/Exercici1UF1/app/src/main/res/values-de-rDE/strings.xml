@@ -30,4 +30,7 @@
     <string name="product_braves_desc">Mütze New Era Atlanta Braves Rustic Fall Low Profile 59FIFTY Ajustiert Braun Mannschaftslogo vorne MLB-Logo hinten Strukturierte Krone (fest) Passform nach Größe Gebogener Schirm New Era-Logo seitlich links Bestickt 100% Polyester</string>
     <string name="product_bills_desc">Mütze New Era Buffalo Bills NFL Salute To Service 59FIFTY Ajustiert Beige Mannschaftslogo mit digitalem Camouflage-Infill vorne Umgekehrte US-Flagge mit digitalem Camouflage auf der rechten Seite NFL Salute To Service-Logo hinten Strukturierte Krone (fest) Passform nach Größe</string>
     <string name="product_heat_desc">Mütze New Era Miami Heat Neon Pack 59FIFTY Ajustiert Blau Mannschaftslogo vorne NBA-Logo hinten Strukturierte Krone (fest) Passform nach Größe Flacher Schirm New Era-Logo seitlich links Bestickt 100% Polyester</string>
+    <string name="user_psw_incorrect">Falscher Benutzername oder falsches Passwort</string>
+    <string name="user_no_existeix">Dieser Benutzer existiert nicht</string>
+    <string name="no_user_found">Keine Datensätze für diesen Benutzer gefunden</string>
 </resources>

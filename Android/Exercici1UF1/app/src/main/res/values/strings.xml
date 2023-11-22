@@ -29,5 +29,8 @@
     <string name="product_braves_desc">Gorra New Era Atlanta Braves Rustic Fall Low Profile 59FIFTY Fitted Marrón Logotipo del equipo en la parte delantera Logo de la MLB en la parte trasera Corona estructurada (rígida) Ajuste fitted (por tallas) Visera curvada Logo New Era bordado en lateral izquierdo 100% poliéster</string>
     <string name="product_bills_desc">Gorra New Era Buffalo Bills NFL Salute To Service 59FIFTY Fitted Beige Logotipo del equipo con infill camuflaje digital en la parte delantera Bandera de EE.UU. invertida con camuflaje digital en lateral derecho Logo NFL Salute To Service en la parte trasera Corona estructurada (rígida) Ajuste fitted (por tallas)</string>
     <string name="product_heat_desc">Gorra New Era Miami Heat Neon Pack 59FIFTY Fitted Azul Logo del equipo en la parte delantera Logotipo de la NBA bordado en la parte trasera Corona estructurada (rígida) Diseño ajustado (por tallas) Visera plana Logo New Era bordado en lateral izquierdo 100% poliéster</string>
+    <string name="user_psw_incorrect">Usuari o Contrasenya Incorrecte</string>
+    <string name="user_no_existeix">Aquest usuari no existeix</string>
+    <string name="no_user_found">No s\'han trobat registres de aquest usuari</string>
 
 </resources>

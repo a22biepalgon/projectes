@@ -30,5 +30,8 @@
     <string name="product_braves_desc">New Era Atlanta Braves Rustic Fall Low Profile 59FIFTY Ajustatua Marroia Taldearen logoa aurrealdean MLB-ren logoa atzealdean Korona egituratua (gogorra) Tamaina bakoitzeko Ajustea Aldaera leuna New Era-ren logoa ezkerrera aldean Bordatua 100% poliester</string>
     <string name="product_bills_desc">New Era Buffalo Bills NFL Salute To Service 59FIFTY Ajustatua Beige Taldearen logoa infill digitalekin aurrealdean Estatubatuen bandera alderantziz digitalarekin eskuineko alboko NFL Salute To Service-aren logoa atzealdean Korona egituratua (gogorra) Tamaina bakoitzeko Ajustea</string>
     <string name="product_heat_desc">New Era Miami Heat Neon Pack 59FIFTY Ajustatua Urdina Taldearen logoa aurrealdean NBA-ren logoa atzealdean Korona egituratua (gogorra) Tamaina bakoitzeko Ajustea Laua aldeera New Era-ren logoa ezkerrera aldean Bordatua 100% poliester</string>
+    <string name="user_psw_incorrect">Erabiltzailea edo pasahitza ez da zuzena</string>
+    <string name="user_no_existeix">Erabiltzaile hau ez da existitzen</string>
+    <string name="no_user_found">Ez da erabiltzaile honentzat erregistroak aurkitu</string>
 
 </resources>

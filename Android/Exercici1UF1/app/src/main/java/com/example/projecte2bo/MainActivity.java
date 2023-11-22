@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                     intent.putExtra("id", id);
                     startActivity(intent);
                 }else{
-                    Toast.makeText(this, "Usuari o Contrasenya Incorrecte", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, R.string.user_psw_incorrect, Toast.LENGTH_SHORT).show();
                 }
 
             } while (cursor.moveToNext());
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             cursor.close();
         } else {
             // No se encontraron registros
-            Toast.makeText(this, "Aquest usuari no eisteix", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.user_no_existeix, Toast.LENGTH_SHORT).show();
         }
 
         // Cerrar la conexión con la base de datos

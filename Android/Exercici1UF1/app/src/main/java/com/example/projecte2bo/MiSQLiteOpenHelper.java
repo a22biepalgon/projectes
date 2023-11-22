@@ -18,7 +18,7 @@ public class MiSQLiteOpenHelper extends SQLiteOpenHelper {
         String crearTablaUsuarios = "CREATE TABLE usuaris (id INTEGER PRIMARY KEY AUTOINCREMENT," +
                 " nom TEXT," +
                 " cognom TEXT," +
-                " dni TEXT," +
+                    " dni TEXT," +
                 " codiPostal INTEGER," +
                 " direccio TEXT," +
                 " data_Naixement DATE," +

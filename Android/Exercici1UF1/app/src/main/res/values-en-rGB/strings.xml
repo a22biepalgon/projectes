@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UF1 Exercise 1</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Back</string>
+    <string name="menu">User Configuration</string>
+    <string name="hello_first_fragment">Welcome User</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="gorrabraves_order_message">You have selected the Braves cap</string>
+    <string name="gorrabills_order_message">You have selected the Bills cap</string>
+    <string name="gorraheat_order_message">You have selected the Heat cap</string>
+    <string name="title_activity_plantilla_dades">User Data</string>
+    <string name="userLogin">User</string>
+    <string name="passwordLogin">Password</string>
+    <string name="buttonLogin">Log In</string>
+    <string name="user_data_name">Name</string>
+    <string name="user_data_title">USER DATA</string>
+    <string name="user_data_last_name">Last Name</string>
+    <string name="user_data_studies">Studies</string>
+    <string name="user_data_dni">ID Number</string>
+    <string name="user_data_postal_code">Postal Code</string>
+    <string name="user_data_genre">Gender</string>
+    <string name="user_data_select_date">Select Date</string>
+    <string name="user_data_date">Date</string>
+    <string name="user_data_address">Address</string>
+    <string name="product_braves_desc">New Era Atlanta Braves Rustic Fall Low Profile 59FIFTY Fitted Cap Brown Team logo on the front MLB logo on the back Structured crown (rigid) Fitted fit (by size) Curved visor Embroidered New Era logo on the left side 100% polyester</string>
+    <string name="product_bills_desc">New Era Buffalo Bills NFL Salute To Service 59FIFTY Fitted Cap Beige Team logo with digital camouflage infill on the front Inverted USA flag with digital camouflage on the right side NFL Salute To Service logo on the back Structured crown (rigid) Fitted fit (by size)</string>
+    <string name="product_heat_desc">New Era Miami Heat Neon Pack 59FIFTY Fitted Cap Blue Team logo on the front NBA logo embroidered on the back Structured crown (rigid) Fitted design (by size) Flat visor Embroidered New Era logo on the left side 100% polyester</string>
+    <string name="user_psw_incorrect">Incorrect User or Password</string>
+    <string name="user_no_existeix">This user does not exist</string>
+    <string name="no_user_found">No records found for this user</string>
+
+</resources>
