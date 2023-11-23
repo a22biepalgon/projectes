@@ -37,7 +37,7 @@
 .capsa_login{
     border: 1px solid black;
     border-radius: 20px;
-    background-color: rgb(0, 110, 255);
+    background-color: rgb(199, 223, 255);
     padding: 20%;
     text-align: center;
 }
@@ -65,14 +65,12 @@ export default {
   methods: {
     login() {
     if(this.username == "user" && this.password== "123"){
-        pinia.setLoginInfo(true, this.username, "/perfilUser.png")
+        pinia.setLoginInfo({loggedIn: true, username: this.username, image: "/perfilUser.png"});
         this.$router.push({ path: '/votacions' })
     }else{
         this.password = "";
         this.malament = true;
     }
-      const { username } = this;
-      console.log(username + "logged in")
     },
   },
 };
