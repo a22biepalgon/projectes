@@ -16,6 +16,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -29,6 +31,8 @@ public class MainActivity2 extends AppCompatActivity {
     private ActivityMain2Binding binding;
     String value = "";
     Integer id;
+    private boolean isFragmentDisplayed = false;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,8 +50,7 @@ public class MainActivity2 extends AppCompatActivity {
         binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
             }
         });
         value = getIntent().getExtras().getString("usuari");
@@ -56,16 +59,32 @@ public class MainActivity2 extends AppCompatActivity {
         text.setText("HOLA " + value);
 
     }
+
+    public void displayFragment(View view) {
+        BarraFragment simpleFragment = BarraFragment.newInstance();
+        // Get the FragmentManager and start a transaction.
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        // Add the SimpleFragment.
+        fragmentTransaction.add(R.id.fragment_container, simpleFragment).addToBackStack(null).commit();
+        // Set boolean flag to indicate fragment is open.
+        isFragmentDisplayed = true;
+    }
+
     public void displayToast(String message) {
-        Toast.makeText(getApplicationContext(), message,
-                Toast.LENGTH_SHORT).show();
-    };
+        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
+    }
+
+    ;
+
     public void mostrarBravesOrder(View view) {
         displayToast(getString(R.string.gorrabraves_order_message));
     }
+
     public void mostrarBillsOrder(View view) {
         displayToast(getString(R.string.gorrabills_order_message));
     }
+
     public void mostrarHeatOrder(View view) {
         displayToast(getString(R.string.gorraheat_order_message));
     }
@@ -86,10 +105,10 @@ public class MainActivity2 extends AppCompatActivity {
 
         return true;
     }
+
     @Override
     public boolean onSupportNavigateUp() {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-        return NavigationUI.navigateUp(navController, appBarConfiguration)
-                || super.onSupportNavigateUp();
+        return NavigationUI.navigateUp(navController, appBarConfiguration) || super.onSupportNavigateUp();
     }
 }

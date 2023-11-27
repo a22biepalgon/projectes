@@ -33,4 +33,11 @@
     <string name="user_psw_incorrect">Falscher Benutzername oder falsches Passwort</string>
     <string name="user_no_existeix">Dieser Benutzer existiert nicht</string>
     <string name="no_user_found">Keine Datensätze für diesen Benutzer gefunden</string>
+    <string name="bar_text">T\'agrada aixó?</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="yes_message">Produkt: Ja</string>
+    <string name="no_message">Produkt: Nein</string>
+
+
 </resources>

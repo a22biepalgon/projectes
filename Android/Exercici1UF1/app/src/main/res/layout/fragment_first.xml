@@ -34,7 +34,7 @@
         android:layout_height="113dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="44dp"
-        android:onClick="mostrarBravesOrder"
+        android:onClick="displayFragment"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textview_first"
         app:srcCompat="@drawable/bravesrusticfall" />
@@ -48,7 +48,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:srcCompat="@drawable/billssaluteservice"
-        android:onClick="mostrarBillsOrder"/>
+        android:onClick="displayFragment"/>
 
     <ImageView
         android:id="@+id/imageView3"
@@ -59,7 +59,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:srcCompat="@drawable/heatneon"
-        android:onClick="mostrarHeatOrder" />
+        android:onClick="displayFragment" />
 
     <TextView
         android:id="@+id/textView3"

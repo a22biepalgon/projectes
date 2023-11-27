@@ -33,5 +33,11 @@
     <string name="user_psw_incorrect">Erabiltzailea edo pasahitza ez da zuzena</string>
     <string name="user_no_existeix">Erabiltzaile hau ez da existitzen</string>
     <string name="no_user_found">Ez da erabiltzaile honentzat erregistroak aurkitu</string>
+    <string name="bar_text">T\'agrada aixó?</string>
+    <string name="yes">Bai</string>
+    <string name="no">Ez</string>
+    <string name="yes_message">Produktua: BAI</string>
+    <string name="no_message">Produktua: Ez</string>
+
 
 </resources>

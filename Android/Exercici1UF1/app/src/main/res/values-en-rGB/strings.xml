@@ -33,5 +33,9 @@
     <string name="user_psw_incorrect">Incorrect User or Password</string>
     <string name="user_no_existeix">This user does not exist</string>
     <string name="no_user_found">No records found for this user</string>
-
+    <string name="bar_text">T\'agrada aixó?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="yes_message">Product: YES</string>
+    <string name="no_message">Product: NO</string>
 </resources>
