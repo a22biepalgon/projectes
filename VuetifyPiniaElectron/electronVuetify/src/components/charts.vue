@@ -1,41 +1,56 @@
 <template>
-    {{ votes }}
-    <Pie :data="votes" :data.labels="this.labels" />
-</template> 
+{{vots}}
+ <Bar v-if="this.loaded"
+    id="my-chart-id"
+    :options="chartOptions"
+    :data="chartData"
+  />
+</template>
 <script>
 import { useAppStore } from '@/store/app'
 const pinia = useAppStore();
-import { Pie } from 'vue-chartjs'
-import { getVotacions } from '@/communicationsManager'
-import { ArcElement, Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'
-ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale, ArcElement)
+import { Bar } from 'vue-chartjs'
+  import { watch } from 'vue'
+import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'
+import { getVotacions } from '@/communicationsManager.js'
+ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
+
+watch(
+  () => pinia.$state.infoVotos.votos,
+  (votos) => {
+    console.log(`count is: ${votos}`)
+  }, { deep: true }
+)
 export default {
-    name: "Charts",
-    components: { Pie },
-    data() {
-        return {
-            loaded: false,
-            labels: [
-                'Vot 1',
-                'Vot 2',
-                'Vot 3',
-                'Vot 4'
-            ],
-
-
-        };
-    },
-
-    methods: {
-
-    },
-    created() {
-
-    },
-    computed: {
-        votes() {
-            return pinia.$state.infoVotos.votos
-        }
+  name: 'BarChart',
+  components: { Bar },
+  data() {
+    return {
+        loaded: false,
+      chartData: {
+        labels: [ 'Vots 1', 'Vots 2', 'Vots 3', 'Vots 4' ],
+        datasets: [ { data: [] } ]
+      },
+      chartOptions: {
+        responsive: true
+      }
     }
+  },
+  methods: {
+    async recarregar(){
+    this.chartData.datasets[0].data = await getVotacions()
+    this.loaded = true
+    }
+  },
+  created(){
+    this.recarregar()
+  },
+  computed:{
+    vots(){
+        return pinia.$state.infoVotos.votos
+    },
+  },
+
+  
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <v-dialog v-model="showAlert" width="auto">
+  <v-dialog v-model="showAlert" persistent width="auto">
     <v-card title="Pagina no accessible">
       <v-card-text>
         Has de fer login per a veure aquesta pagina
@@ -8,7 +8,7 @@
       <v-card-actions>
         <v-spacer></v-spacer>
 
-        <v-btn text="Login" @click="this.$router.push({ path: '/' })"></v-btn>
+        <v-btn text="Login"  to="/"></v-btn>
       </v-card-actions>
     </v-card>
   </v-dialog>

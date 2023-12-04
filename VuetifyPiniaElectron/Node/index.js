@@ -3,6 +3,11 @@ import cors from 'cors';
 import { createServer } from 'node:http';
 import { Server } from 'socket.io';
 import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 //Permetem que el servidor pugui rebre peticions de qualsevol origen
@@ -26,6 +31,9 @@ app.get("/votacions", (req, res) => {
   });
 })
 
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/dist/index.html");
+});
 io.on('connection', (socket) => {
   socket.on('votacio', (msg) => {
     // Llegim l'arxiu de votacions
@@ -54,6 +62,21 @@ io.on('connection', (socket) => {
 });
 
 //recordeu de canviar el port del socket!!!
-server.listen(3999, () => {
-  console.log('Server running at http://localhost:3999');
+server.listen(3473, () => {
+  console.log('Server running at http://localhost:3473');
 });
+
+
+import history from "connect-history-api-fallback"
+
+const staticFieldMiddleware = express.static("dist");
+
+
+app.use(staticFieldMiddleware);
+app.use(
+  history({
+    disableDotRules: true,
+    verbose: true,
+  })
+);
+app.use(staticFieldMiddleware);
