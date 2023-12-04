@@ -18,9 +18,10 @@
         <v-col cols ="6">
           <botonsVotacio />
         </v-col>
-        <v-col cols="6"></v-col>
+        <v-col cols="6">
+          <chartsVotacio />
+        </v-col>
       </v-row>
-    Hola {{ this.username }}
   </v-container>
 </template>
 <script>
@@ -57,5 +58,6 @@ export default {
 </script>
 <script setup>
 import botonsVotacio from '@/components/botonsVotacions.vue'
+import chartsVotacio from '@/components/charts.vue'
 
 </script>

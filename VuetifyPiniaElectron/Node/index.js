@@ -10,15 +10,21 @@ app.use(cors());
 
 //Creem el servidor de Socket.io especificant que pot accedir qualsevol client
 const server = createServer(app);
-const io = new Server(server,{
+const io = new Server(server, {
   cors: {
-    origin: 'http://localhost:3000', 
+    origin: 'http://localhost:3000',
     methods: ['GET', 'POST'],
     credentials: true
   }
 });
 
+app.get("/votacions", (req, res) => {
+  fs.readFile('votos.json', 'utf8', (err, data) => {
+    if (err) throw err;
 
+    res.send(JSON.parse(data));
+  });
+})
 
 io.on('connection', (socket) => {
   socket.on('votacio', (msg) => {
@@ -32,7 +38,7 @@ io.on('connection', (socket) => {
       const votos = JSON.parse(data);
       console.log(votos)
       // Actualistem el rempte de vots
-        votos[msg]++;
+      votos[msg]++;
 
       // Guardem el JSON actualitzat
       fs.writeFile('votos.json', JSON.stringify(votos), (err) => {
