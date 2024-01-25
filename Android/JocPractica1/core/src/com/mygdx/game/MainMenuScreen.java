@@ -14,6 +14,7 @@ public class MainMenuScreen implements Screen {
     final BitmapFont font;
     final SpriteBatch batch;
     OrthographicCamera camera;
+
     public MainMenuScreen(Baggy game) {
         this.game = game;
         this.batch = game.getBatch();
@@ -41,7 +42,7 @@ public class MainMenuScreen implements Screen {
         AssetManager.load();
 
         //Definim el fons de pantalla
-        Texture backgroundTexture = AssetManager.getFonsPantalla();
+        Texture backgroundTexture = AssetManager.getFonsJoc();
         // Replace with your image file
         batch.draw(backgroundTexture, 0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
         font.draw(game.getBatch(), "Benvingut a Futbiel!!! ", 50, 400);

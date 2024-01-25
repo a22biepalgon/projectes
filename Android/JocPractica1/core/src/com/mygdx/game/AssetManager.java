@@ -1,5 +1,8 @@
 package com.mygdx.game;
 
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.audio.Sound;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Texture;
 
 public class AssetManager {
@@ -14,6 +17,11 @@ public class AssetManager {
 
     private static Texture coneImage;
 
+    private static Sound pilotaSo;
+
+    private static Sound gameOver;
+
+
     public static void load() {
         // Carregar els assets, com ara la textura del jugador
         fonsPantalla = new Texture("fons.jpg") ;
@@ -21,6 +29,8 @@ public class AssetManager {
         fonsJoc = new Texture("fonsJoc.jpg");
         ballImage = new Texture("ball.png");
         coneImage = new Texture("cono.png");
+        pilotaSo = Gdx.audio.newSound(Gdx.files.internal("pilota.mp3"));
+        gameOver = Gdx.audio.newSound(Gdx.files.internal("gameOver.mp3"));
     }
 
     public static void dispose() {
@@ -30,6 +40,8 @@ public class AssetManager {
         fonsJoc = null;
         ballImage = null;
         coneImage = null;
+        pilotaSo = null;
+        gameOver = null;
     }
 
 
@@ -52,5 +64,13 @@ public class AssetManager {
 
     public static Texture getConeImage() {
         return coneImage;
+    }
+
+    public static Sound getPilotaSo() {
+        return pilotaSo;
+    }
+
+    public static Sound getGameOver() {
+        return gameOver;
     }
 }

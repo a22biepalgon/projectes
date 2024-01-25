@@ -30,13 +30,13 @@ public class MyGameScreen implements Screen {
     private Texture playerImage;
     private Texture coneImage;
     private Sound ballSound;
-    private Sound coneSound;
+    private Sound endSound;
     private Music gameMusic;
     private Rectangle player;
     private Array<Rectangle> balls;
     private Array<Rectangle> cones;
     private long lastItemTime;
-
+    private long lastSecondTime;
 
     private int punts;
     public MyGameScreen(Baggy game){
@@ -55,6 +55,8 @@ public class MyGameScreen implements Screen {
         ballImage = AssetManager.getBallImage();
         coneImage = AssetManager.getConeImage();
         balls = new Array<Rectangle>();
+        ballSound = AssetManager.getPilotaSo();
+        endSound = AssetManager.getGameOver();
         spawnItem();
 
         cones = new Array<Rectangle>();
@@ -95,9 +97,18 @@ public class MyGameScreen implements Screen {
         for(Rectangle cone: cones) {
             batch.draw(coneImage, cone.x, cone.y, 64, 64);
         }
+
+        //Ensenyem la puntuació
+        font.draw(game.getBatch(), "Puntuació: " + this.punts, 50, 400);
+
         batch.end();
 
-
+        // Afegim el control per actualitzar els punts cada segon
+        long currentTime = TimeUtils.nanoTime();
+        if (currentTime - lastSecondTime > 1000000000) {
+            this.punts +=10;
+            lastSecondTime = currentTime;
+        }
         //Afegim els controls del jugador
         if(Gdx.input.isTouched()) {
             Vector3 touchPos = new Vector3();
@@ -124,7 +135,7 @@ public class MyGameScreen implements Screen {
             //Definim la acció a fer si es toquen la gota i el cubell
             if(ball.overlaps(player)) {
                 punts += 100;
-                //ballSound.play();
+                ballSound.play();
                 iter.remove();
             }
 
@@ -135,7 +146,7 @@ public class MyGameScreen implements Screen {
             if(cone.x + 200 < 0) iter.remove();
             //Definim la acció a fer si es toquen la gota i el cubell
             if(cone.overlaps(player)) {
-                //coneSound.play();
+                endSound.play();
                 iter.remove();
                 game.setScreen(new EndScreen(game, punts));
             }
