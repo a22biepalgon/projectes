@@ -1,10 +1,9 @@
 package com.mygdx.game;
 
-import com.badlogic.gdx.Game;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
-public class Baggy extends Game {
+public class Baggy extends com.badlogic.gdx.Game {
     private SpriteBatch batch;
     private BitmapFont bitmap;
 
