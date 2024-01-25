@@ -121,7 +121,7 @@ public class MyGdxGame implements Screen {
 			Rectangle raindrop = iter.next();
 			raindrop.y -= 200 * Gdx.graphics.getDeltaTime();
 			if(raindrop.y + 64 < 0) iter.remove();
-			//Definim la acció a fer si es toquen la gota i el cubell
+			//Definim la acció a fer si es toquen la pilota i el jugador
 			if(raindrop.overlaps(bucket)) {
 				dropsGathered++;
 				dropSound.play();
