@@ -33,8 +33,8 @@ odooClient.methodCall('authenticate', [odooDb, odooUsername, odooPassword, {}], 
             default_code: 'Samarreta',
             type: 'product',
             categ_id: 1,
-            list_price: Math.floor(Math.random() * (100 - 10 + 1)) + min,
-            standard_price: Math.floor(Math.random() * (list_price - (list_price-10) + 1)) + min 
+            list_price: Math.floor(Math.random() * (100 - 10 + 1)) + 10,
+            standard_price: Math.floor(Math.random() * (50 - (10) + 1)) + 10 
         };
 
         // Create product
