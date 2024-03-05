@@ -29,10 +29,12 @@ odooClient.methodCall('authenticate', [odooDb, odooUsername, odooPassword, {}], 
         });
 
         const newProductData = {
-            name: 'ProducteProva',
-            default_code: '1',
+            name: 'Producte Prova2',
+            default_code: 'Samarreta',
             type: 'product',
-            categ_id: 1, // Category ID (replace with actual category ID)
+            categ_id: 1,
+            list_price: Math.floor(Math.random() * (100 - 10 + 1)) + min,
+            standard_price: Math.floor(Math.random() * (list_price - (list_price-10) + 1)) + min 
         };
 
         // Create product
