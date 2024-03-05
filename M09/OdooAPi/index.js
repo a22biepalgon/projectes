@@ -8,7 +8,7 @@ const odooUsername = 'a22biepalgon@inspedralbes.cat';
 const odooPassword = 'a22biepalgon';
 
 // XML-RPC client
-const odooClient = xmlrpc.createSecureClient({
+const odooClient = xmlrpc.createClient({
     host: odooUrl,
     port: odooPort,
     path: '/xmlrpc/2/common',
@@ -22,7 +22,7 @@ odooClient.methodCall('authenticate', [odooDb, odooUsername, odooPassword, {}], 
         console.log('Authenticated successfully. User ID:', uid);
 
         // Create XML-RPC client for object operations
-        const odooObjectClient = xmlrpc.createSecureClient({
+        const odooObjectClient = xmlrpc.createClient({
             host: odooUrl,
             port: odooPort,
             path: '/xmlrpc/2/object',
